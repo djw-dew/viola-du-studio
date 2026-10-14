@@ -1,0 +1,170 @@
+/* Portrait and introduction on the Resume page. */
+.resume-page .inner-main {
+  max-width: 1080px;
+  padding-top: 20px;
+}
+
+.resume-page .inner-heading {
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+
+.resume-page .inner-heading h1 { font-size: 46px; }
+.resume-page .inner-heading .eyebrow { margin-bottom: 10px; }
+.resume-page .inner-heading .title-star { font-size: 35px; }
+
+.resume-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 274px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(30px, 5vw, 64px);
+  position: relative;
+  padding: 32px 42px;
+  background: #ffe1ec;
+  border: 1.5px solid var(--ink);
+  border-radius: 8px;
+  box-shadow: 6px 6px 0 #edb2c9;
+}
+
+.resume-photo {
+  position: relative;
+  margin: 0;
+  padding: 11px 11px 0;
+  background: var(--cream);
+  border: 1.5px solid var(--ink);
+  box-shadow: 4px 5px 0 #bf7e9738;
+  transform: rotate(-2deg);
+}
+
+.resume-photo .tape { width: 86px; left: calc(50% - 43px); }
+.resume-photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid #dcc3c6;
+}
+
+.resume-photo figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  min-height: 39px;
+  font: 17px var(--hand);
+  color: #805567;
+}
+
+.resume-photo figcaption span { color: #bc3973; font-size: 23px; }
+.resume-profile-copy { min-width: 0; position: relative; z-index: 1; }
+.profile-greeting {
+  display: inline-block;
+  padding: 6px 10px;
+  margin-bottom: 17px;
+  border: 1px solid #ae8e57;
+  background: #ffedb3;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transform: rotate(-2deg);
+}
+
+.resume-profile-copy h2 {
+  font-family: var(--display);
+  font-size: clamp(39px, 4.8vw, 57px);
+  letter-spacing: -2px;
+  line-height: 1.08;
+}
+
+.profile-real-name { margin-top: 10px; font-size: 16px; letter-spacing: .5px; }
+.profile-research-line {
+  margin-top: 14px;
+  font-family: var(--hand);
+  font-size: 17px;
+  line-height: 1.5;
+  color: #92516d;
+}
+.profile-research-line span { padding-inline: 3px; }
+
+.resume-profile .resume-introduction {
+  margin-top: 17px;
+  max-width: 46em;
+  font-size: 13px;
+  line-height: 1.95;
+  color: #6b4e5d;
+}
+
+.resume-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  min-height: 36px;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #7c3556;
+  overflow-wrap: anywhere;
+}
+.resume-contact:hover { text-decoration: underline; text-underline-offset: 4px; }
+.resume-profile-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 24px; margin-top: 12px; }
+.resume-profile-actions .profile-download { margin-top: 0; background: var(--cream); }
+.resume-profile-actions .text-link { padding-block: 12px; color: #7c3556; }
+.resume-profile-actions .text-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.profile-sparkle {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font: 44px Georgia, serif;
+  color: #b14e77;
+  transform: rotate(12deg);
+  pointer-events: none;
+}
+
+.resume-page .resume-layout { display: block; margin-top: 32px; }
+.resume-page .resume-paper { padding: 30px 42px; }
+.resume-page .paper-top { margin-bottom: 8px; }
+.resume-page .resume-section:first-of-type { margin-top: 12px; }
+.resume-page .resume-item p { max-width: 70em; font-size: 13px; }
+.resume-page .resume-item p.resume-subtitle { font-size: 11px; }
+.resume-page .highlights-list { font-size: 12px; }
+.resume-page .resume-item h4 { font-size: 15px; }
+
+@media (max-width: 900px) {
+  .resume-profile { grid-template-columns: minmax(0, 226px) minmax(0, 1fr); padding: 28px; gap: 30px; }
+  .resume-profile-copy h2 { font-size: 43px; }
+  .resume-profile .resume-introduction { font-size: 12px; }
+  .profile-research-line { font-size: 15px; }
+  .resume-page .resume-paper { padding: 28px; }
+}
+
+@media (max-width: 700px) {
+  .resume-page .inner-main { padding-top: 14px; }
+  .resume-page .inner-heading { margin-top: 10px; margin-bottom: 25px; }
+  .resume-page .inner-heading h1 { font-size: 37px; }
+  .resume-page .inner-heading .eyebrow { margin-bottom: 7px; }
+  .resume-page .inner-heading .title-star { font-size: 29px; }
+  .resume-profile { grid-template-columns: minmax(0, 1fr); padding: 26px 24px; gap: 25px; }
+  .resume-photo { width: 202px; justify-self: center; padding: 9px 9px 0; }
+  .resume-photo figcaption { min-height: 33px; font-size: 16px; }
+  .resume-profile-copy { text-align: center; }
+  .profile-greeting { margin-bottom: 13px; font-size: 8px; }
+  .resume-profile-copy h2 { font-size: 42px; }
+  .profile-real-name { margin-top: 8px; font-size: 14px; }
+  .profile-research-line { font-size: 15px; margin-top: 10px; }
+  .resume-profile .resume-introduction { margin-top: 16px; font-size: 13px; text-align: left; }
+  .resume-profile-actions { justify-content: center; gap: 10px 20px; }
+  .profile-sparkle { top: 22px; right: 17px; font-size: 37px; }
+  .resume-page .resume-layout { margin-top: 26px; }
+  .resume-page .resume-paper { padding: 23px; }
+  .resume-page .resume-item h4 { font-size: 14px; }
+  .resume-page .resume-item p { font-size: 12px; }
+  .resume-page .highlights-list { font-size: 11px; }
+}
+
+@media (max-width: 390px) {
+  .resume-profile { padding: 26px 19px; }
+  .resume-page .resume-paper { padding: 21px 19px; }
+  .resume-profile-copy h2 { font-size: 39px; }
+  .resume-page .inner-heading h1 { font-size: 34px; }
+}
