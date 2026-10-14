@@ -35,9 +35,9 @@ window.STUDIO = {
     },
     {
       id: 'disease-target', title: '疾病驱动的小分子靶点评估 Agent', category: 'DISEASE & DISCOVERY',
-      description: '从疾病问题出发，探索小分子靶点的评估思路。体验入口即将开放。',
+      description: '从疾病问题出发，探索小分子靶点的评估思路。',
       tags: ['疾病驱动', '小分子', '靶点评估'],
-      url: '', status: 'coming-soon',
+      url: 'https://udify.app/workflow/gp3H3zmPsYISUdku', status: 'live',
       image: 'assets/demo-discovery.svg', imageAlt: '浅紫色实验笔记：疾病线索、分子结构与评估清单'
     }
   ]
